@@ -102,10 +102,10 @@ void c_ctr::init_model2(int ctr_run)
     m_U = gsl_matrix_calloc(m_num_users, m_num_factors);
     m_V = gsl_matrix_calloc(m_num_items, m_num_factors);
     m_temp = gsl_matrix_calloc(m_num_users,m_num_factors);
-    char * pathVInit = "/home/nda/Downloads/Codes/hgaprec/src/data_mv/final-V.dat";
-    char * pathUInit = "/home/nda/Downloads/Codes/hgaprec/src/data_mv/final-U.dat";
-    FILE *fV = fopen(pathVInit,"r");
-    FILE *fU = fopen(pathUInit,"r");
+//    char * pathVInit = "/home/nda/Downloads/Codes/hgaprec/src/data_mv/final-V.dat";
+//    char * pathUInit = "/home/nda/Downloads/Codes/hgaprec/src/data_mv/final-U.dat";
+//    FILE *fV = fopen(pathVInit,"r");
+//    FILE *fU = fopen(pathUInit,"r");
 
     if (ctr_run)
     {
@@ -126,8 +126,8 @@ void c_ctr::init_model2(int ctr_run)
 
 
     }
-     fclose(fU);
-    fclose(fV);
+//     fclose(fU);
+//    fclose(fV);
 }
 
 
@@ -1313,6 +1313,13 @@ void c_ctr::learn_pctr(c_data* users, const c_data* items,
 
         col_sum(m_V,x);
         gsl_vector_add(x,se);
+        gsl_vector_set_all(se,param->lambda_u);
+
+        ul_gsl_matrix_add_vector(tmp_U,se);
+        gsl_vector_add(x,se);
+
+        gsl_vector_set_all(se,1e-40);
+
 
         ul_gsl_matrix_div_vector(tmp_U,x);
         swapp((void**)&m_U,(void**)&tmp_U);

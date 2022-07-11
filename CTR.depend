@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1390958127 source:/home/nda/Downloads/Codes/ctr/corpus.cpp
+	"corpus.h"
+	<assert.h>
+	<stdio.h>
+
+1479352869 /home/nda/Downloads/Codes/ctr/corpus.h
+	<vector>
+	<stddef.h>
+
+1390958142 source:/home/nda/Downloads/Codes/ctr/ctr.cpp
+	"ctr.h"
+	"opt.h"
+
+1390958142 /home/nda/Downloads/Codes/ctr/ctr.h
+	"utils.h"
+	"corpus.h"
+	"data.h"
+
+1390958144 /home/nda/Downloads/Codes/ctr/utils.h
+	<gsl/gsl_vector.h>
+	<gsl/gsl_matrix.h>
+	<gsl/gsl_permutation.h>
+	<gsl/gsl_linalg.h>
+	<gsl/gsl_eigen.h>
+	<gsl/gsl_rng.h>
+	<gsl/gsl_randist.h>
+	<gsl/gsl_multimin.h>
+	<gsl/gsl_math.h>
+	<gsl/gsl_blas.h>
+	<gsl/gsl_sf_psi.h>
+	<math.h>
+	<assert.h>
+	<time.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<unistd.h>
+	<dirent.h>
+	<memory.h>
+
+1390958142 /home/nda/Downloads/Codes/ctr/data.h
+	<vector>
+
+1390958143 /home/nda/Downloads/Codes/ctr/opt.h
+	<gsl/gsl_vector.h>
+
+1390958142 source:/home/nda/Downloads/Codes/ctr/data.cpp
+	<assert.h>
+	<stdio.h>
+	"data.h"
+
+1390958142 source:/home/nda/Downloads/Codes/ctr/main.cpp
+	<stdio.h>
+	<string.h>
+	<getopt.h>
+	"ctr.h"
+
+1390958143 source:/home/nda/Downloads/Codes/ctr/opt.cpp
+	"opt.h"
+	"utils.h"
+	<gsl/gsl_sort_vector.h>
+
+1390958144 source:/home/nda/Downloads/Codes/ctr/utils.cpp
+	"utils.h"
+

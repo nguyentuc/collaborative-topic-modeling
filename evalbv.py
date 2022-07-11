@@ -46,7 +46,7 @@ pathUserTrain = "../../Data/%s/users_train.dat"%dataname
 
 pathFinalU = "results/%s/final-U.dat"%dirresult
 pathFinalV = "results/%s/final-V.dat"%dirresult
-pathfOut = "results/%s/result.txt"%dataname
+pathfOut = "results/%s/resultlv.txt"%dataname
 
 fUserTest = open(pathUserTest,"r")
 fUserTrain = open(pathUserTrain,"r")

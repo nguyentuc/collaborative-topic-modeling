@@ -38,8 +38,8 @@ if dataname == '':
 
 MAXTOP = 100
 
-pathUserTest = "../../Data/%s/users_test.dat"%dataname
-pathUserTrain = "../../Data/%s/users_train.dat"%dataname
+pathUserTest = "../../data/%s/users_test.dat"%dataname
+pathUserTrain = "../../data/%s/users_train.dat"%dataname
 
 pathFinalU = "results/%s/final-U.dat"%dirresult
 pathFinalV = "results/%s/final-V.dat"%dirresult
